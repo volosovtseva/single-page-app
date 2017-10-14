@@ -1,0 +1,17 @@
+<div class="album-wrapper">
+    <div class="row text-center">
+        <h2>{{$ctrl.photo.name}}</h2>
+    </div>
+    <div class="row text-center">
+        <img ng-src="{{$ctrl.mainImageUrl}}" class="photo">
+    </div>
+    <div class="row text-center">
+        <ul>
+            <li ng-repeat="img in $ctrl.photo.images">
+                <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)">
+            </li>
+        </ul>
+    </div>
+
+</div>
+

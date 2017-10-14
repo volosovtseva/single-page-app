@@ -1,0 +1,100 @@
+body, div, p, img, ul, a, .row {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+.wrapper{
+    padding: 5px;
+}
+.album-box{
+    opacity: 0.8;
+    padding: 0 0 15px 0;
+}
+.album-box:hover{
+    opacity: 1;
+    box-shadow: 0 0 10px #ffffff;
+}
+.album-box img{
+    height: 20vh;
+}
+.img-box{
+    width: 25vw;
+    overflow: hidden;
+    margin: auto;
+}
+.album-box span{
+    font-size: 14px;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.album-wrapper li{
+    height: 8vw;
+    width: 8vw;
+    overflow: hidden;
+    display: inline-block;
+    list-style: none;
+    padding: 7px 5px;
+}
+.album-wrapper li img{
+    width: 12vw;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.album-wrapper li img:hover{
+    opacity: 1;
+}
+.album-wrapper .photo{
+    max-height: 75vh;
+    max-width: 90vw;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px){
+    .img-box {
+        width: 25vw;
+    }
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 638px){
+    .album-box{
+        width: 50%;
+    }
+    .img-box {
+        width: 35vw;
+    }
+}
+@media (max-width: 638px) and (orientation: portrait){
+    .album-wrapper li{
+        height: 15vw;
+        width: 15vw;
+    }
+    .album-wrapper li img{
+        width: 20vw;
+    }
+}
+
+@media (max-width: 380px){
+    .album-box{
+        width:100%;
+    }
+    .img-box {
+        width: 75vw;
+    }
+    .album-box img{
+        height: 30vh;
+    }
+}
